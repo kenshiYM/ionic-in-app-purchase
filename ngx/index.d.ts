@@ -79,7 +79,7 @@ export declare class InAppPurchase extends IonicNativePlugin {
         signature: string;
         productType: string;
     }>;
-    subscribe(productId: string, oldProductIds: string[]): Promise<{
+    subscribe(productId: string, oldProductIds: string[]|undefined|null): Promise<{
         transactionId: string;
         receipt: string;
         signature: string;
